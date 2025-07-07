@@ -1,14 +1,11 @@
 import { Router } from 'express'
-
-
-
+import { getAllElectronic } from '../controller/dbController.js'
 
 const router = Router()
 
 
-router.get('/', (req, res) => {
-    return res.status(200).json({ message: "Hello" })
-})
+router.get('/', getAllElectronic)
+
 
 
 export default router
