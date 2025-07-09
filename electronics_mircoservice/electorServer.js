@@ -7,6 +7,7 @@ import electornicRoutes from './route/electronicRoutes.js'
 dotenv.config()
 const app = express();
 
+app.use(express.json())
 
 app.use('/electronic', electornicRoutes)
 

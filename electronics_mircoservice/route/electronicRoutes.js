@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { getAllElectronic, createElectionic, deleteElectionic } from '../controller/dbController.js'
+import { getAllElectronic, createElectionic, deleteElectionic, updateElectionic } from '../controller/dbController.js'
 
 const router = Router()
 
@@ -7,7 +7,7 @@ const router = Router()
 router.get('/', getAllElectronic)
 router.post('/', createElectionic)
 router.delete('/:id', deleteElectionic)
-// router.put('/:id', getAllElectronic)
+router.put('/:id', updateElectionic)
 
 
 

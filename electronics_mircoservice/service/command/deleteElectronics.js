@@ -2,6 +2,7 @@ import electronicsModel from "../../model/electronics.js";
 
 export async function deleteData(filter) {
     try {
+        console.log(filter)
         let result = await electronicsModel.findByIdAndDelete(filter);
         return result
     } catch (error) {
