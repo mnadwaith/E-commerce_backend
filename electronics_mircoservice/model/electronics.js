@@ -24,7 +24,7 @@ const electronicsSchema = new mongoose.Schema({
     rating: {
         type: Number
     }
-})
+}, { versionKey: false })
 
 const electronicsModel = mongoose.model('Electronics', electronicsSchema)
 
