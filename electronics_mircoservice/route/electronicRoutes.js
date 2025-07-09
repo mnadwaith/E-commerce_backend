@@ -1,10 +1,13 @@
 import { Router } from 'express'
-import { getAllElectronic } from '../controller/dbController.js'
+import { getAllElectronic, createElectionic, deleteElectionic } from '../controller/dbController.js'
 
 const router = Router()
 
 
 router.get('/', getAllElectronic)
+router.post('/', createElectionic)
+router.delete('/:id', deleteElectionic)
+// router.put('/:id', getAllElectronic)
 
 
 
